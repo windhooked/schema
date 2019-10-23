@@ -28,6 +28,7 @@ var driverDialect map[string]*dialect = map[string]*dialect{
 	"*stdlib.Driver":              &postgres, // github.com/jackc/pgx
 	"*pgsqldriver.postgresDriver": &postgres, // github.com/jbarham/gopgsqldriver - TODO(js) No datatypes.
 	"*mysql.MySQLDriver":          &mysql,    // github.com/go-sql-driver/mysql
+	"*mssql.Driver":               &mssql,    // github.com/denisenkom/go-mssqldb
 	"*godrv.Driver":               &mysql,    // github.com/ziutek/mymysql - TODO(js) No datatypes.
 	"*mssql.MssqlDriver":          &mssql,    // github.com/denisenkom/go-mssqldb
 	"*freetds.MssqlDriver":        &mssql,    // github.com/minus5/gofreetds - TODO(js) No datatypes. Error on create view.
